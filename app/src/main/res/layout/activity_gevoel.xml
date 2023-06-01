@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="4pt"
+    tools:context=".GevoelActivity">
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hoe voelt u zich?"
+        android:textAlignment="center"
+        android:textColor="#6200ED"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.268" />
+
+
+    <Button
+        android:id="@+id/buttonBegin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bevestigen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.734" />
+
+    <ImageButton
+        android:id="@+id/slecht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="80dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nietzogoed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/helemaal_niet_goed" />
+
+    <ImageButton
+        android:id="@+id/goed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/gaatwel"
+        app:layout_constraintStart_toEndOf="@+id/gaatwel"
+        app:layout_constraintTop_toTopOf="@+id/gaatwel"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/goed" />
+
+    <ImageButton
+        android:id="@+id/gaatwel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="30dp"
+        android:backgroundTint="#FFFFFF"
+
+        app:layout_constraintBottom_toBottomOf="@+id/nietzogoed"
+        app:layout_constraintStart_toEndOf="@+id/nietzogoed"
+        app:layout_constraintTop_toTopOf="@+id/nietzogoed"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/neutraal" />
+
+    <ImageButton
+        android:id="@+id/nietzogoed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/slecht"
+        app:layout_constraintStart_toEndOf="@+id/slecht"
+        app:layout_constraintTop_toTopOf="@+id/slecht"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/niet_zo_goed" />
+
+    <ImageButton
+        android:id="@+id/erggoed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="#FFFFFF"
+
+        app:layout_constraintBottom_toBottomOf="@+id/goed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/goed"
+        app:layout_constraintTop_toTopOf="@+id/goed"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/heel_goed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

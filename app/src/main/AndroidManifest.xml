@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.James"
+        tools:targetApi="31">
+        <activity
+            android:name=".startStentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".startAblatieActvity"
+            android:exported="false" />
+        <activity
+            android:name=".stentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ablatieActivity"
+            android:exported="false" />
+        <activity
+            android:name=".laterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".herhalingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".gesprekActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vragenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".verpleegkundigeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uitlegActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".keuzeBehandelingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GevoelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EindeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".eindActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BehandelingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
