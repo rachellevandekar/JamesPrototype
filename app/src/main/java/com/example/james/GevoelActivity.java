@@ -20,7 +20,7 @@ public class GevoelActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gevoel);
-        btn = findViewById(R.id.buttonBegin);
+
         slecht = findViewById(R.id.slecht);
         nietzogoed = findViewById(R.id.nietzogoed);
         gaatwel = findViewById(R.id.gaatwel);

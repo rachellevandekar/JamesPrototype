@@ -3,21 +3,28 @@ package com.example.james;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
+import android.widget.VideoView;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class eindActivity extends AppCompatActivity {
 
+    VideoView videoView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_eind);
 
-        playAudio();
+        videoView = findViewById(R.id.video);
+        videoView.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.eindjames));
+        videoView.start();
 
-        int timeout = 4000;
+        int timeout = 6000;
+
         Timer timer = new Timer();
         timer.schedule(new TimerTask() {
 
@@ -29,12 +36,7 @@ public class eindActivity extends AppCompatActivity {
         }, timeout);
 
 
-    }
 
-    private void playAudio(){
-
-        MediaPlayer stem = MediaPlayer.create(eindActivity.this, R.raw.bedanktjames);
-        stem.start();
     }
 
     public void QuitApp() {
@@ -42,5 +44,4 @@ public class eindActivity extends AppCompatActivity {
 
         System.exit(0);
     }
-
 }

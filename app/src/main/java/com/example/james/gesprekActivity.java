@@ -21,7 +21,7 @@ public class gesprekActivity extends AppCompatActivity {
         btnY = findViewById(R.id.buttonYes);
         btnN = findViewById(R.id.buttonNo);
 
-        playAudio();
+       // playAudio();
 
         btnY.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,14 +37,14 @@ public class gesprekActivity extends AppCompatActivity {
             }
         });
     }
-        private void playAudio(){
+     /*   private void playAudio(){
 
             MediaPlayer stem = MediaPlayer.create(gesprekActivity.this, R.raw.intro);
             stem.start();
 
 
 
-    }
+    }*/
 }
 
 

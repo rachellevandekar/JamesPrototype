@@ -27,7 +27,14 @@ public class herhalingActivity extends AppCompatActivity {
         btnY.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
+                startActivity(new Intent(herhalingActivity.this, uitlegActivity.class));
+            }
+        });
+
+        btnN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(herhalingActivity.this, vragenActivity.class));
             }
         });
 

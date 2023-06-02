@@ -4,21 +4,36 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
+import android.widget.MediaController;
+import android.widget.VideoView;
+import android.media.AudioManager;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
+    VideoView videoView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        playAudio();
+       // playAudio();
 
-        int timeout = 6000; // make the activity visible for 4 seconds
+        videoView = findViewById(R.id.video);
+       // MediaController mediaController = new MediaController(this);
+       // mediaController.setAnchorView(videoView);
+      //  videoView.setMediaController(mediaController);
+        videoView.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.jamesin));
+
+
+        // playAudio();
+        videoView.start();
+
+        int timeout = 10000; // make the activity visible for 4 seconds
 
         Timer timer = new Timer();
         timer.schedule(new TimerTask() {
@@ -26,13 +41,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent intent = new Intent(MainActivity.this, BehandelingActivity.class);
+                Intent intent = new Intent(MainActivity.this, gesprekActivity.class);
                 startActivity(intent);
             }
         }, timeout);
 
 
+
     }
+   // public static final int ADJUST_MUTE = -100;
 
 
 

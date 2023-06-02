@@ -23,7 +23,7 @@ public class stentActivity extends AppCompatActivity {
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);
-        videoView.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.uitlegjames));
+        videoView.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.jamesstent));
         // playAudio();
         videoView.start();
 

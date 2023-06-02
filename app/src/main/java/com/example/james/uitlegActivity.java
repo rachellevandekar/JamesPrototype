@@ -20,10 +20,10 @@ public class uitlegActivity extends AppCompatActivity {
 
 
         videoView = findViewById(R.id.video);
-        MediaController mediaController = new MediaController(this);
-        mediaController.setAnchorView(videoView);
-        videoView.setMediaController(mediaController);
-        videoView.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.uitlegjames));
+       // MediaController mediaController = new MediaController(this);
+        // mediaController.setAnchorView(videoView);
+        //videoView.setMediaController(mediaController);
+        videoView.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.pacejames));
         // playAudio();
         videoView.start();
 

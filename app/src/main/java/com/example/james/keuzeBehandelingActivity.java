@@ -36,7 +36,7 @@ public class keuzeBehandelingActivity extends AppCompatActivity {
         btnI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(keuzeBehandelingActivity.this, StartActivity.class));
+                startActivity(new Intent(keuzeBehandelingActivity.this, startStentActivity.class));
             }
         });
 
@@ -50,14 +50,14 @@ public class keuzeBehandelingActivity extends AppCompatActivity {
         btnHI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(keuzeBehandelingActivity.this, StartActivity.class));
+                startActivity(new Intent(keuzeBehandelingActivity.this, startAblatieActvity.class));
             }
         });
 
         btnS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(keuzeBehandelingActivity.this, StartActivity.class));
+                startActivity(new Intent(keuzeBehandelingActivity.this, startStentActivity.class));
             }
         });
 
